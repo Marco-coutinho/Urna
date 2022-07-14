@@ -15,7 +15,6 @@ function comecarEtapa() {
         numeroHtml += '<div class="numero"></div>';
 
      }
-
      seuVotoPara.style.display ='none';
      cargo.innerHTML = etapa.titulo;
      descricao.innerHTML = '';
