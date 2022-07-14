@@ -6,15 +6,19 @@ let lateral =document.querySelector('.d-1-right');
 let numeros = document.querySelector('d-1-3');
 
 let etapaAtual = 0;
+let numero = '';
 
 function comecarEtapa() {
-     let etapa = etapas[etapaAtual];
+     let etapa = etapas [etapaAtual];
 
      let numeroHtml = '';
      for(let i=0; i<etapa.numeros;i++) {
+        if(i === 0) {
+        numeroHtml +='<div class="numero pisca"></div>';
+        }
         numeroHtml += '<div class="numero"></div>';
 
-     }
+     };
      seuVotoPara.style.display ='none';
      cargo.innerHTML = etapa.titulo;
      descricao.innerHTML = '';
@@ -23,9 +27,15 @@ function comecarEtapa() {
      numeros.innerHTML = numeroHtml;
 
 }
+function atualizainterface(){
 
+}
 function clicou(n) {
-    alert("cliclou em "+n);
+   let elNumero = document.querySelector('.numero.pisca');
+   if(elNumero !== null) {
+    elNumero.innerHTML = n;
+    numero = `${numero}${n}`;
+   }
 }
 function branco() {
     alert("cliclou em Branco");
