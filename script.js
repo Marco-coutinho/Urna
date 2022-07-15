@@ -58,7 +58,7 @@ function atualizainterface(){
      } else {
         seuVotoPara.style.display='block';
         aviso.style.display='block';
-        descricao.innerHTML= 'div class-="aviso--grande pisca">VOTO NULO</div>';
+        descricao.innerHTML= '<div class="aviso--grande pisca">VOTO NULO</div>';
      }
 }
 function clicou(n) {
@@ -81,7 +81,7 @@ function branco() {
         seuVotoPara.style.display = 'block';
         aviso.style.display='block';
         numeros.innerHTML = '';
-        descricao.innerHTML= 'div class-="aviso--grande pisca">VOTO EM BRANCO</div>';
+        descricao.innerHTML= '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
 
     } else {
         alert("para votar em BRANCO, não pode possuir nenhum numero digitado!")
