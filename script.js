@@ -59,6 +59,7 @@ function atualizainterface(){
      } else {
         seuVotoPara.style.display='block';
         aviso.style.display='block';
+        numeros.innerHTML = '';
         descricao.innerHTML= '<div class="aviso--grande pisca">VOTO NULO</div>';
      }
 }
